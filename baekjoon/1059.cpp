@@ -27,6 +27,12 @@ int main() {
 		}
 		else if (S[i] > n)
 		{
+			if (i == 0)
+			{
+				start = 0;
+				end = S[i];
+				break;
+			}
 			start = S[i - 1];
 			end = S[i];
 
