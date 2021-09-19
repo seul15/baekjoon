@@ -3,16 +3,16 @@ using namespace std;
 
 int main()
 {
-	int A, B, C;
-	int p,s;
+	long long A, B, C;
+	long long p,s;
 	cin >> A >> B >> C;
 
-	if (B > C)
+	if (B >= C)
 	{
 		cout << -1<<'\n';
 	}
 
-	for (int i = 1; i < 1000; i++)
+	for (long long i = 1; i>0;  i++)
 	{
 		p = A + B*i;
 		s = C * i;
